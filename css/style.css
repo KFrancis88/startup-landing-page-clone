@@ -433,7 +433,8 @@ th {
   padding: 0;
 }
 
-/* End Normalize-CSS */
+/* End Normalize-CSS 
+   ========================================================================== */
 
 /* Custom Page Styling */
 
@@ -447,7 +448,7 @@ div {
 }
 
 .content {
-  width: 970px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -540,10 +541,12 @@ div {
   cursor: pointer;
 }
 
+/* End Introduction */
+
 /* Cases */
 .cases {
   background-color: #fff;
-  overflow: hidden;
+  overflow: auto;
   padding-bottom: 5rem;
 }
 
@@ -570,4 +573,45 @@ div {
   font-size: 1.563rem;
   color: #1d1e21;
   margin-right: -.2rem; 
+}
+
+/* End Cases */
+
+/* Footer */
+.social {
+  background-color: #fff;
+  overflow: auto; 
+  text-align: center;
+  padding-bottom: 9.375rem;
+}
+
+.social hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+}
+.social h5 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.icons {
+  margin-right: 2.5rem;
+  margin-top: -.5rem;
+}
+
+.social .icons li{
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 0 .3rem;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+}
+
+.social p {
+  color: #838994;
+  font-weight: 300;
+  font-size: .9rem;
 }
