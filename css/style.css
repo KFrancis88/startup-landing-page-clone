@@ -4,12 +4,19 @@
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
+ * 3. Set Box Sizing.
  */
 
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-font-smoothing: antialiased; /* 3 */
+  box-sizing: border-box; /* 4 */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;  /* 3 */
 }
 
 /**
@@ -424,4 +431,108 @@ table {
 td,
 th {
   padding: 0;
+}
+
+/* End Normalize-CSS */
+
+/* Custom Page Styling */
+
+body {
+  background-color: LightGray;
+  font-family: 'Roboto', sans-serif;  
+}
+
+div {
+  border: 1px solid Chocolate;
+}
+
+.content {
+  width: 970px;
+  margin: 0 auto;
+}
+
+/* Navigation Section */
+.top-navigation {
+  background-color: #fff;
+}
+
+.top-navigation .content {
+  height: 70px;
+  padding: 0px 15px;
+}
+
+.top-navigation .logo {
+  height: 70px;
+}
+
+.top-navigation .links {
+  float: right;
+  font-size: 1em; 
+  color: #838994; 
+  letter-spacing: 0.03em;
+  margin-top: 26px;
+}
+
+.top-navigation .links li {
+  display: inline-block;
+  margin-left: 26px;
+}
+
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover{
+  color: #393C42;
+  cursor: pointer;
+}
+
+/* End Navigation Section */
+
+/* Introduction */
+
+.introduction {
+  background-image: url('../images/first-background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
+}
+
+.introduction h1, h3 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.introduction h1 {
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+}
+
+.introduction h3 {
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
+}
+
+.big-button {
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 16px 31px;
+  line-height: 1.33;
+  margin: 0 auto;
+  display: block;
+  width: 9.688rem;
+  background-color: #f15a29;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.big-button:hover{
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
 }
