@@ -454,6 +454,9 @@ div {
 /* Navigation Section */
 .top-navigation {
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .top-navigation .content {
@@ -479,8 +482,8 @@ div {
 }
 
 .top-navigation .links .active {
-    color: #4c5058;
-    font-weight: 500;
+  color: #4c5058;
+  font-weight: 500;
 }
 
 .top-navigation .links li:hover{
@@ -503,8 +506,8 @@ div {
 
 .introduction h1, h3 {
   color: white;
-  text-align: center;
   font-weight: 300;
+  text-align: center;
 }
 
 .introduction h1 {
@@ -535,4 +538,36 @@ div {
   background-color: #d9400e;
   border-color: #cf3d0e;
   cursor: pointer;
+}
+
+/* Cases */
+.cases {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+.cases .content {
+  margin-top: 7.875rem;
+  color: #1d1e21;
+  text-align: center;
+}
+
+.cases h2 {
+  margin: 1.625rem 0 3.125rem;
+  font-weight: 300;
+  font-size: 2.75rem
+}
+
+.cases .devices li {
+  width: 33.3333333%;
+  display: inline-block;
+  margin-right: -.3rem; 
+}
+
+.cases .devices h3 {
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #1d1e21;
+  margin-right: -.2rem; 
 }
